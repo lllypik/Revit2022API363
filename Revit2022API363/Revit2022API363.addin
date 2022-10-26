@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Command">
+		<Assembly>"C:\PROG\App\DLL\Revit2022API363.dll"</Assembly>
+		<AddInId>8E32E222-7A73-46CA-820A-157410389E3D</AddInId>
+		<FullClassName>Revit2022API363.Main</FullClassName>
+		<VendorId>ADSK</VendorId>
+		<Text>Тема 6 Создание объектов на прямой </Text>
+	</AddIn>
+</RevitAddIns>
+

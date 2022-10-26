@@ -1,0 +1,30 @@
+﻿<Window x:Class="Revit2022API363.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Revit2022API363"
+             mc:Ignorable="d" 
+             Height="300" Width="300">
+    <StackPanel>
+        <Label Content="Выбрать тип элемента"/>
+
+        <ComboBox ItemsSource="{Binding FamilyTypes}"
+                  SelectedValue="{Binding SelectedFamilyType}"
+                  DisplayMemberPath="Name"/>
+
+        <Label Content="Выбрать уровень из списка"/>
+
+        <ComboBox ItemsSource="{Binding Levels}"
+                  SelectedValue="{Binding SelectedLevel}"
+                  DisplayMemberPath="Name"/>
+
+        <Label Content="Количество вставляемых объектов"/>
+
+        <TextBox Text="{Binding NumberFamilyTypes}"/>
+
+        <Button Content="Применить"
+                Command="{Binding ApplyCommand}"/>
+        
+    </StackPanel>
+</Window>
